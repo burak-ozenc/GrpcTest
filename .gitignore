@@ -1,1 +1,8 @@
+# idea files
 .idea
+
+# obj and bin files
+GrpcClient/obj
+GrpcClient/bin
+GrpcService/obj
+GrpcService/bin

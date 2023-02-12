@@ -4,9 +4,7 @@ option csharp_namespace = "GrpcService1";
 
 package authentication;
 
-// The greeting service definition.
 service Authentication {
-  // Sends a greeting
   rpc Authenticate (AuthenticationRequest) returns (AuthenticationResponse);
 }
 
@@ -19,21 +17,3 @@ message AuthenticationResponse {
   string AccessToken = 1;
   int32 expires = 2;
 }
-
-
-//message ProductModel {
-//  string ProductName = 1;
-//  string ProductCode = 2;
-//  double Price = 3;
-//  google.protobuf.Timestamp StockDate = 4;
-//}
-//
-//message ProductSaveResponse {
-//  int32 StatusCode = 1;
-//  bool IsSuccessful = 2;
-//}
-//
-//
-//message ProductList {
-//  repeated ProductModel Products = 1;
-//}
